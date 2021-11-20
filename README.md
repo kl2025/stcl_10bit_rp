@@ -1,13 +1,13 @@
 
-#Scanning Trasfer Cavity Lock implemented in Red Pitaya FPGA 
+Scanning Trasfer Cavity Lock implemented in Red Pitaya FPGA 
 
 The signal processing part is based on these two papers:
-https://www.semanticscholar.org/paper/Compact-implementation-of-a-scanning-transfer-lock-Burke-Garcia/0964304216c6b3d080ee94ad159c08e6b4b41c5d
+https://www.semanticscholar.org/paper/Compact-implementation-of-a-scanning-transfer-lock-Burke-Garcia/0964304216c6b3d080ee94ad159c08e6b4b41c5d and 
 https://www.semanticscholar.org/paper/Microcontroller-based-scanning-transfer-cavity-lock-Subhankar-Restelli/3400617bde9fcfa05268903d11fe3f83a8ecf6fa
 
 Most of the codes are based on https://github.com/pavel-demin/red-pitaya-notes and https://github.com/apotocnik/redpitaya_guide .
 
-The code in this repo is for 10-bit Red Pitaya, you will need to change the codes for the 14-bit version, e.g. TDATA_REMAP in the subset convertor. 
+The code in this repo is for 10-bit Red Pitaya, you will need to change the codes for the 14-bit version, e.g. TDATA_REMAP in the subset converter. Hopefully it will be useful for other students doing similar things. 
 
 In my case, 
 Red Pitaya ADC inputs: in_ch_1 is photodiode signal; in_ch_2 is the scan trigger signal from the function generator for scanning the cavity piezo. 
